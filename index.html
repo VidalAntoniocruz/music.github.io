@@ -2,16 +2,25 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Reproductor de Audio</title>
+  <title>Reproductor de Música</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      margin-top: 50px;
-      background-color: #f0f0f0;
+      margin: 50px;
+      background-color: #f7f7f7;
+    }
+    .player-section {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     button {
-      padding: 12px 24px;
+      padding: 10px 20px;
       font-size: 16px;
       background-color: #1db954;
       color: white;
@@ -26,9 +35,14 @@
   </style>
 </head>
 <body>
-  <h1>Reproductor de Audio</h1>
-  <button id="playButton">▶ Reproducir</button>
-  <audio id="audioPlayer" src="untilifoundyou.mp3"></audio>
+  <h1>Mi Reproductor de Música</h1>
+
+  <!-- Sección del reproductor -->
+  <div class="player-section">
+    <h2>Reproductor</h2>
+    <button id="playButton">▶ Reproducir</button>
+    <audio id="audioPlayer" src="untilifoundyou.mp3"></audio>
+  </div>
 
   <script>
     const button = document.getElementById("playButton");
